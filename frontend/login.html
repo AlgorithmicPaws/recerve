@@ -1,12 +1,12 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina de Reservas</title>
+    <title>Inicio de Sesión</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
         <div class="container">
             <a href="index.html" class="logo">Restaurante</a>
@@ -16,15 +16,23 @@
                 <a href="consulta.html" class="button">Consultar</a>
             </nav>
         </div>
-    </header>   
+    </header>  
 
     <main>
-        <section id="hero">
-            <h1>Reservas</h1>
-            <a href="login.html" class="button">Reserva ya!</a>
+        <section id="login-section">
+            <h2>Inicia Sesión</h2>
+            <form id="login-form" action="dashboard.html" method="post">
+                <label for="username">Nombre de usuario</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Iniciar Sesión</button>
+            </form>
         </section>
     </main>
-    
+
     <footer>
         <div class="container">
             <p>&copy; 2024 Restaurante. Todos los derechos reservados.</p>
