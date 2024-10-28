@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacer una Reserva</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Restaurante</a>
+            <nav>
+                <a href="login.html" class="button">Log In</a>
+                <a href="reserva.html" class="button">Reservar</a>
+                <a href="consulta.html" class="button">Consultar</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="reservation-section">
+            <h2>Hacer una Reserva</h2>
+            <form id="reservation-form">
+                
+                <label for="restaurant">Seleccione el restaurante</label>
+                <select id="restaurant" name="restaurant">
+                    <option value="restaurante1">Restaurante 1</option>
+                    <option value="restaurante2">Restaurante 2</option>
+                    <option value="restaurante3">Restaurante 3</option>
+                </select>
+
+                <label for="date">Fecha</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Hora</label>
+                <input type="time" id="time" name="time" required>
+
+                <button type="button" id="check-availability">Ver Mesas Disponibles</button>
+
+                <div id="tables">
+                    <h3>Mesas Disponibles</h3>
+                    <ul>
+                        <li>Mesa 1 - 2 Personas</li>
+                        <li>Mesa 2 - 4 Personas</li>
+                        <li>Mesa 3 - 6 Personas</li>
+                    </ul>
+                </div>
+                
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Restaurante. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

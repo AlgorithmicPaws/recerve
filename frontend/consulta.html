@@ -1,10 +1,53 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Consultar Reservas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>olasald</h1>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Restaurante</a>
+            <nav>
+                <a href="login.html" class="button">Log In</a>
+                <a href="reserva.html" class="button">Reservar</a>
+                <a href="consulta.html" class="button">Consultar</a>
+            </nav>
+        </div>
+        
+    </header>
+
+    <main>
+        <section id="consultation-section">
+            <h2>Mis Reservas</h2>
+            <div id="reservations-list">
+                <div class="reservation-card">
+                    <h3>Restaurante 1</h3>
+                    <p><strong>Fecha:</strong> 2024-11-15</p>
+                    <p><strong>Hora:</strong> 20:00</p>
+                    <p><strong>Mesa:</strong> 4 personas</p>
+                    <button>Cancelar Reserva</button>
+                </div>
+
+                <div class="reservation-card">
+                    <h3>Restaurante 2</h3>
+                    <p><strong>Fecha:</strong> 2024-12-05</p>
+                    <p><strong>Hora:</strong> 19:30</p>
+                    <p><strong>Mesa:</strong> 2 personas</p>
+                    <button>Cancelar Reserva</button>
+                </div>
+                
+                <!-- Puedes agregar más tarjetas de reservas aquí -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Restaurante. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>

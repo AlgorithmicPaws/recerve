@@ -141,8 +141,210 @@ section.button:hover {
     font-weight: bold;
 }
 
-#login-.h2{
-    font-size: 3.5em;
+h2{
+    font-size: 2.5em;
     color: #E2F1E7;
     align-content: center;
 }
+
+#login-section{
+    padding-top: 100px;
+}
+
+/* Estilos para la página de registro */
+#register-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+#register-section h2 {
+    color: #E2F1E7;
+    margin-bottom: 20px;
+}
+
+#register-form {
+    background-color: #243642;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    color: #E2F1E7;
+}
+
+#register-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#register-form input[type="text"],
+#register-form input[type="email"],
+#register-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #629584;
+    border-radius: 5px;
+    background-color: #FFFFFF; /* Cambiado a blanco */
+    color: #243642; /* Cambiado a un color oscuro para el texto */
+}
+
+#register-form input[type="text"]::placeholder,
+#register-form input[type="email"]::placeholder,
+#register-form input[type="password"]::placeholder {
+    color: #7a7a7a; /* Color del texto del placeholder */
+}
+
+
+#register-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #629584;
+    color: #E2F1E7;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#register-form button:hover {
+    background-color: #629594;
+}
+
+
+/* Estilos para la página de reservas */
+#reservation-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+#reservation-section h2 {
+    color: #E2F1E7;
+    margin-bottom: 20px;
+}
+
+#reservation-form {
+    background-color: #243642;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    color: #E2F1E7;
+}
+
+#reservation-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#reservation-form select,
+#reservation-form input[type="date"],
+#reservation-form input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #629584;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    color: #243642;
+}
+
+#reservation-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #629584;
+    color: #E2F1E7;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#reservation-form button:hover {
+    background-color: #629594;
+}
+
+/* Estilos para la lista de mesas disponibles */
+#tables {
+    display: none; /* Oculto por defecto hasta que se muestren las mesas disponibles */
+    margin-top: 20px;
+    color: #E2F1E7;
+}
+
+#tables h3 {
+    margin-bottom: 10px;
+}
+
+#tables ul {
+    list-style: none;
+    padding: 0;
+}
+
+#tables li {
+    background-color: #387478;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    color: #E2F1E7;
+}
+
+/* Estilos para la página de consulta de reservas */
+#consultation-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+#consultation-section h2 {
+    color: #E2F1E7;
+    margin-bottom: 20px;
+}
+
+#reservations-list {
+    width: 100%;
+    max-width: 600px;
+}
+
+.reservation-card {
+    background-color: #243642;
+    color: #E2F1E7;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.reservation-card h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.reservation-card p {
+    margin: 5px 0;
+}
+
+.reservation-card button {
+    background-color: #629584;
+    color: #E2F1E7;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.reservation-card button:hover {
+    background-color: #629594;
+}
+
