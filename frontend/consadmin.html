@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta - Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Restaurante</a>
+            <nav>
+                <a href="login.html" class="button">Log In</a>
+                <a href="reserva.html" class="button">Reservar</a>
+                <a href="consadmin.html" class="button">Consultar</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="all-reservations-section">
+            <h2>Todas las Reservas</h2>
+            <div id="all-reservations-list">
+                <div class="reservation-card">
+                    <h3>Restaurante 1</h3>
+                    <p><strong>Fecha:</strong> 2024-11-15</p>
+                    <p><strong>Hora:</strong> 20:00</p>
+                    <p><strong>Mesa:</strong> 4 personas</p>
+                    <p><strong>Usuario:</strong> Juan Pérez</p>
+                    <button class="cancel-btn">Cancelar Reserva</button>
+                </div>
+
+                <div class="reservation-card">
+                    <h3>Restaurante 2</h3>
+                    <p><strong>Fecha:</strong> 2024-12-05</p>
+                    <p><strong>Hora:</strong> 19:30</p>
+                    <p><strong>Mesa:</strong> 2 personas</p>
+                    <p><strong>Usuario:</strong> Ana Gómez</p>
+                    <button class="cancel-btn">Cancelar Reserva</button>
+                </div>
+                
+                <!-- Agrega más tarjetas de reservas aquí -->
+            </div>
+        </section>
+
+        <section id="all-restaurants-section">
+            <h2>Todos los Restaurantes</h2>
+            <div id="all-restaurants-list">
+                <div class="restaurant-card">
+                    <h3>Restaurante 1</h3>
+                    <p>Ubicación: Av. Principal 123</p>
+                    <p>Capacidad: 50 personas</p>
+                </div>
+
+                <div class="restaurant-card">
+                    <h3>Restaurante 2</h3>
+                    <p>Ubicación: Calle Secundaria 456</p>
+                    <p>Capacidad: 30 personas</p>
+                </div>
+                
+                <!-- Agrega más tarjetas de restaurantes aquí -->
+            </div>
+            <button onclick="window.location.href='restaurante.html'" class="add-restaurant-btn">Agregar Nuevo Restaurante</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Restaurante. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
