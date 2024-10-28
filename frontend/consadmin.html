@@ -1,12 +1,12 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina de Reservas</title>
+    <title>Consulta - Admin</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
         <div class="container">
             <a href="index.html" class="logo">Restaurante</a>
@@ -16,19 +16,31 @@
                 <a href="consadmin.html" class="button">Consultar</a>
             </nav>
         </div>
-    </header>   
+    </header>
 
     <main>
-        <section id="hero">
-            <h1>Reservas</h1>
-            <a href="login.html" class="button">Reserva ya!</a>
+        <section id="all-reservations-section">
+            <h2>Todas las Reservas</h2>
+            <div id="all-reservations-list">
+                <!-- Las reservas se generarán aquí mediante JavaScript -->
+            </div>
+        </section>
+
+        <section id="all-restaurants-section">
+            <h2>Todos los Restaurantes</h2>
+            <div id="all-restaurants-list">
+                <!-- Los restaurantes se generarán aquí mediante JavaScript -->
+            </div>
+            <button onclick="window.location.href='restaurante.html'" class="add-restaurant-btn">Agregar Nuevo Restaurante</button>
         </section>
     </main>
-    
+
     <footer>
         <div class="container">
             <p>&copy; 2024 Restaurante. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <script src="scripts/consadmin.js"></script> 
 </body>
 </html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Restaurante</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Restaurante</a>
+            <nav>
+                <a href="login.html" class="button">Log In</a>
+                <a href="reserva.html" class="button">Reservar</a>
+                <a href="consulta.html" class="button">Consultar</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="create-restaurant-section">
+            <h2>Crear Nuevo Restaurante</h2>
+            <form id="create-restaurant-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Nombre del Restaurante:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="address">Dirección:</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="hours">Horario:</label>
+                    <input type="text" id="hours" name="hours" required placeholder="Ej: 9:00 AM - 11:00 PM">
+                </div>
+
+                <h3>Mesas:</h3>
+                <div class="form-group">
+                    <label for="capacity">Capacidad de Asientos:</label>
+                    <input type="number" id="capacity" min="1" placeholder="Ej: 4">
+                </div>
+                
+                <div class="form-group">
+                    <label for="quantity">Cantidad de Mesas:</label>
+                    <input type="number" id="quantity" min="1" placeholder="Ej: 10">
+                </div>
+                
+                <button type="button" id="add-table-btn" class="add-btn">Agregar Mesas</button>
+
+                <ul id="table-list"></ul>
+                
+                <button type="submit" class="submit-btn">Crear Restaurante</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Restaurante. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/restaurante.js"></script>
+</body>
+</html>
